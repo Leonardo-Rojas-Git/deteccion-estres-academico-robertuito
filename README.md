@@ -1,6 +1,6 @@
 # Detección de Estrés Académico mediante Fine-Tuning de RoBERTuito
 
-Clasificación binaria de estrés académico en comentarios estudiantiles universitarios, mediante ajuste fino (fine-tuning) de un modelo transformer preentrenado en español (RoBERTuito), siguiendo la metodología CRISP-DM.
+Clasificación binaria de estrés académico en comentarios de estudiantes universitarios en una Encuesta Referencial Docente (ERD), mediante ajuste fino (fine-tuning) de un modelo transformer preentrenado en español (RoBERTuito), siguiendo la metodología CRISP-DM.
 
 ## Resumen
 

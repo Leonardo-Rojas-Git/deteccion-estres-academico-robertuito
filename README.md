@@ -29,23 +29,23 @@ El proyecto sigue las fases de CRISP-DM:
 ```
 ├── README.md
 ├── data_estudiantes.csv          # Corpus final (720 filas, auditado)
-├── 1_Expo_IA_PNL.ipynb           # Pipeline completo: carga, preparación, fine-tuning, evaluación
-├── Prueba_robertitu.ipynb        # Inferencia con el modelo ya entrenado
-└── matriz_confusion_final.png    # Matriz de confusión sobre el conjunto de prueba
+├── 01_entrenamiento_modelo.ipynb # Pipeline completo: carga, preparación, fine-tuning, evaluación
+├── 02_prediccion_estres.ipynb    # Inferencia con el modelo ya entrenado
+└── matriz_confusion.png    # Matriz de confusión sobre el conjunto de prueba
 ```
 
 ## Modelo
 
 El modelo ajustado está publicado públicamente en Hugging Face Hub:
-**[huggingface.co/tu-usuario/robertuito-estres-academico](https://huggingface.co/tu-usuario/robertuito-estres-academico)**
+**[huggingface.co/LeonardoRojas/robertuito-estres-academico](https://huggingface.co/LeonardoRojas/robertuito-estres-academico)**
 
 ## Cómo ejecutar
 
 Ambos notebooks están diseñados para ejecutarse en Google Colab sin dependencias locales ni acceso a almacenamiento personal.
 
-**Pipeline completo** (`1_Expo_IA_PNL.ipynb`): reproduce el proceso desde la carga de datos hasta la evaluación final. Requiere entorno de ejecución con GPU (Entorno de ejecución → Cambiar tipo de entorno → GPU T4).
+**Pipeline completo** (`01_entrenamiento_modelo.ipynb`): reproduce el proceso desde la carga de datos hasta la evaluación final. Requiere entorno de ejecución con GPU (Entorno de ejecución → Cambiar tipo de entorno → GPU T4).
 
-**Solo inferencia** (`Prueba_robertitu.ipynb`): carga el modelo ya entrenado desde Hugging Face Hub y permite clasificar texto nuevo directamente.
+**Solo inferencia** (`02_prediccion_estres.ipynb`): carga el modelo ya entrenado desde Hugging Face Hub y permite clasificar texto nuevo directamente.
 
 En ambos casos, basta con abrir el notebook en Colab y ejecutar las celdas en orden; los datos y el modelo se cargan automáticamente desde este repositorio y desde Hugging Face Hub, respectivamente.
 
@@ -63,4 +63,4 @@ El corpus utilizado es de origen sintético, generado mediante un modelo de leng
 
 ## Autor
 
-Leo — Ingeniería de Sistemas, Universidad de Lima
+Leonardo Rojas Payano — Ingeniería de Sistemas, Universidad de Lima
